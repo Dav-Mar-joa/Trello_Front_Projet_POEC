@@ -50,7 +50,7 @@ jobs:
           name: node-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip ./dist/trello-front/browser -r
+        run: unzip release.zip ./dist -r
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
